@@ -88,7 +88,7 @@ function App() {
 
                 <button className="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
 
-                <button className="pswp__button pswp__button--link" title="Link" onClick={linkHandle}></button>
+                {/* <button className="pswp__button pswp__button--link" title="Link" onClick={linkHandle}></button> */}
 
                 <button className="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
 
