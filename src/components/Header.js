@@ -3,7 +3,7 @@ import { sections } from '../lib/data';
 function Header() {
     return (
         <header id="header" className="header d-flex justify-content-between">
-        {/* <!-- Header Start --> */}
+            {/* <!-- Header Start --> */}
             {/* <!-- Navigation Menu Start --> */}
             <div className="header__navigation">
             <nav id="menu" className="menu">
@@ -12,7 +12,7 @@ function Header() {
                         <li className="menu__item">
                             <a className="menu__link btn" href={item.link}>
                             <span className="menu__caption">{item.section}</span>
-                            <i className="ph-bold ph-house-simple"></i>
+                            <i className={item.label}></i>
                             </a>
                         </li>
                     ))}

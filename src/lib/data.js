@@ -1,23 +1,28 @@
 export const sections = [
     {
         section: "Home", 
-        link: "#home"
+        link: "#home",
+        label: "ph-bold ph-house-simple"
     },
     {
         section: "Portfolio", 
-        link: "#portfolio"
+        link: "#portfolio",
+        label: "ph-bold ph-squares-four"
     },
     {
         section: "About Me", 
-        link: "#about"
+        link: "#about",
+        label: "ph-bold ph-user"
     },
     {
         section: "Resume", 
-        link: "#resume"
+        link: "#resume",
+        label: "ph-bold ph-code"
     },
     {
         section: "Contact", 
-        link: "#contact"
+        link: "#contact",
+        label: "ph-bold ph-envelope"
     },
 ]
 
