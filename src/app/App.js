@@ -1,3 +1,5 @@
+import "../../public/css/App.css";
+
 import Script from 'next/script'; 
 import Header from '../components/Header'; 
 import Avatar from '../components/Avatar';

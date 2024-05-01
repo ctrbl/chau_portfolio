@@ -1,3 +1,5 @@
+'use client'
+
 import StarIcon from './StarIcon';
 import { resume, tools, awards } from '../lib/data';
 

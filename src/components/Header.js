@@ -1,3 +1,5 @@
+'use client'
+
 import { sections } from '../lib/data';
 
 function Header() {

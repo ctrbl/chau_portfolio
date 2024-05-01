@@ -1,3 +1,5 @@
+'use client'
+
 import StarIcon from "./StarIcon";
 import { contact } from "../lib/data";
 

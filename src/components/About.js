@@ -1,3 +1,5 @@
+'use client'
+
 import StarIcon from './StarIcon';
 import { downloadResume } from './Home';
 import { experience, skills } from '../lib/data';

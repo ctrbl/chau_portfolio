@@ -1,3 +1,5 @@
+'use client'
+
 import StarIcon from './StarIcon';
 
 export const downloadResume = () => {
