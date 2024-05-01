@@ -1,5 +1,6 @@
 import { contact } from '../lib/data';
 import HeadShot from '../../public/img/avatars/chau-headshot.jpg';
+import "../../public/css/App.css";
 
 function Avatar() {
     return (

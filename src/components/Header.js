@@ -1,4 +1,5 @@
 import { sections } from '../lib/data';
+import "../../public/css/App.css";
 
 function Header() {
     return (

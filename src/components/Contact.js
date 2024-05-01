@@ -1,5 +1,6 @@
 import StarIcon from "./StarIcon";
 import { contact } from "../lib/data";
+import "../../public/css/App.css";
 
 function Contact() {
     return (
