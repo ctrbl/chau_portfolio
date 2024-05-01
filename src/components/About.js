@@ -1,7 +1,6 @@
 import StarIcon from './StarIcon';
 import { downloadResume } from './Home';
 import { experience, skills } from '../lib/data';
-import Image from 'next/image'; 
 
 function About() {
     return (
@@ -121,7 +120,7 @@ function About() {
                                 </div>
                             </div>
                             <div className="cards__image d-flex animate-in-up">
-                                <Image src={item.imgUrl} alt={item.name} fill/>
+                                <img src={item.imgUrl} alt={item.name}/>
                             </div>
                             </div>
                         </div>
