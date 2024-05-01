@@ -33,7 +33,7 @@ function Avatar() {
                 </div>
                 </div>
                 <div className="avatar__image">
-                <img src={"/img/avatars/chau-headshot.jpg"} alt="Chau Headshot" />
+                    <img src={"/img/avatars/chau-headshot.jpg"} alt="Chau Headshot" />
                 </div>
             </div>
             {/* <!-- data caption #1 --> */}

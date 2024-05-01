@@ -1,5 +1,6 @@
 import StarIcon from './StarIcon';
 import { resume, tools, awards } from '../lib/data';
+import Image from 'next/image'; 
 
 function Resume() {
     return (
@@ -82,7 +83,7 @@ function Resume() {
                 {tools.map((item, _) => (
                     <div className="tools-cards__item d-flex grid-item-s animate-card-5">
                     <div className="tools-cards__card">
-                        <img className="tools-cards__icon animate-in-up" src={item.link} alt={`${item.name} Icon`} />
+                        <Image className="tools-cards__icon animate-in-up" src={item.link} alt={`${item.name} Icon`}  width="100" height="100"/>
                         <h6 className="tools-cards__caption animate-in-up">{item.name}</h6>
                     </div>
                     </div>
@@ -115,7 +116,7 @@ function Resume() {
                             <div className="testimonials-card animate-in-up">
                                 <div className="testimonials-card__tauthor d-flex animate-in-up">
                                 <div className="tauthor__avatar">
-                                    <img src={item.image} alt={item.from} />
+                                    <Image src={item.image} alt={item.from} width="100" height="100"/>
                                 </div>
                                 <div className="tauthor__info d-flex flex-column justify-content-center">
                                     <p className="tauthor__name">{item.name}</p>
