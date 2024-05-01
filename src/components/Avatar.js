@@ -1,5 +1,3 @@
-'use client'
-
 import { contact } from '../lib/data';
 import HeadShot from '../../public/img/avatars/chau-headshot.jpg';
 

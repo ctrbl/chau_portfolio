@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect } from 'react';
 import StarIcon from './StarIcon';
 import { galleryItems } from '../lib/data';

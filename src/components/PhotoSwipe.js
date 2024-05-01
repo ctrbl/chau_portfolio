@@ -1,5 +1,3 @@
-'use client'
-
 function PhotoSwipe() {
     return (
         <div className="pswp" tabindex="-1" role="dialog" aria-hidden="true">
