@@ -1,6 +1,6 @@
 import StarIcon from './StarIcon';
 import { resume, tools, awards } from '../lib/data';
-import "../../public/css/App.css";
+
 function Resume() {
     return (
         <section id="resume" className="inner resume">

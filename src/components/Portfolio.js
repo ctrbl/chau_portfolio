@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import StarIcon from './StarIcon';
 import { galleryItems } from '../lib/data';
-import "../../public/css/App.css";
+
 function Portfolio() {
     const [width, setWidth] = useState(window.innerWidth); 
 

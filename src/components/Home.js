@@ -1,5 +1,4 @@
 import StarIcon from './StarIcon';
-import "../../public/css/App.css";
 
 export const downloadResume = () => {
     const pdfUrl = "/files/Chau_Nguyen_Resume.pdf";

@@ -1,4 +1,3 @@
-import "../../public/css/App.css";
 function PhotoSwipe() {
     return (
         <div className="pswp" tabindex="-1" role="dialog" aria-hidden="true">

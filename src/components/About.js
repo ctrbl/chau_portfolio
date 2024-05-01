@@ -1,7 +1,6 @@
 import StarIcon from './StarIcon';
 import { downloadResume } from './Home';
 import { experience, skills } from '../lib/data';
-import "../../public/css/App.css";
 
 function About() {
     return (
