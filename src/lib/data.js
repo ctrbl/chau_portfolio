@@ -383,8 +383,8 @@ export const tools = [
         link: "img/icons/icon-swiftui.svg",
     },
     {
-        name: "PostgreSQL",
-        link: "img/icons/icon-postgresql.svg",
+        name: "MySQL",
+        link: "img/icons/icon-mysql.svg",
     },
     {
         name: "Node.js",
