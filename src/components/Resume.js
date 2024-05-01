@@ -115,7 +115,7 @@ function Resume() {
                             <div className="testimonials-card animate-in-up">
                                 <div className="testimonials-card__tauthor d-flex animate-in-up">
                                 <div className="tauthor__avatar">
-                                    <Image src={item.image} alt={item.from} />
+                                    <img src={item.image} alt={item.from} />
                                 </div>
                                 <div className="tauthor__info d-flex flex-column justify-content-center">
                                     <p className="tauthor__name">{item.name}</p>
