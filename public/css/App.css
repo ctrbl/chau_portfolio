@@ -3730,7 +3730,7 @@ form textarea:required:valid {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 70vh;
+  height: 85dvh;
 }
 @media only screen and (min-width: 768px) {
   .cards__item {
