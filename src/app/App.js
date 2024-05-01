@@ -14,6 +14,7 @@ function App() {
   return (
     <body>
       <Script src="/js/app.js"/>
+      <link rel="stylesheet" href="css/App.css" />
       <div className="App">
         {/* <!-- Loader Start --> */}
         <div id="loader" className="loader">

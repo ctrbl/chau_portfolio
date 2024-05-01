@@ -1,5 +1,4 @@
 import { contact } from '../lib/data';
-import HeadShot from '../../public/img/avatars/chau-headshot.jpg';
 
 function Avatar() {
     return (
@@ -34,7 +33,7 @@ function Avatar() {
                 </div>
                 </div>
                 <div className="avatar__image">
-                <img src={HeadShot.src} alt="Chau Headshot" />
+                <img src={"/img/avatars/chau-headshot.jpg"} alt="Chau Headshot" />
                 </div>
             </div>
             {/* <!-- data caption #1 --> */}
