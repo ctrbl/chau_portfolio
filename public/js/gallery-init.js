@@ -154,6 +154,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         options = {
             closeOnScroll: false,
             showHideOpacity: true,
+            history: false,
 
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
