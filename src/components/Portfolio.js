@@ -41,7 +41,7 @@ function Portfolio() {
                         {galleryItems.map((item, index) => (
                             <figure key={index} className="col-12 col-md-6 gallery__item grid-item animate-card-2" itemScope itemType="http://schema.org/ImageObject">
                                 <a href={item.imageUrl} data-image={item.thumbnailUrl} className="gallery__link" itemProp="contentUrl" data-size="1920x1080">
-                                    <img src={item.thumbnailUrl} className="gallery__image" itemProp="thumbnail" alt={item.title}/>
+                                    <img src={item.thumbnailUrl} className="gallery__image" itemProp="thumbnail" alt={item.title} />
                                 </a>
                                 <figcaption className="gallery__descr" itemProp="caption description">
                                     <h5>{item.title}</h5>
