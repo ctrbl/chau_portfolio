@@ -1,4 +1,4 @@
-import "../../public/App.css";
+import "../../public/css/App.css";
 import Script from 'next/script'; 
 import Header from '../components/Header'; 
 import Avatar from '../components/Avatar';
@@ -15,12 +15,12 @@ function App() {
       <Script src="/js/app.js"/>
       <div className="App">
         {/* <!-- Loader Start --> */}
-        {/* <div id="loader" className="loader">
+        <div id="loader" className="loader">
           <div id="loaderContent" className="loader__content">
             <div className="loader__shadow"></div>
             <div className="loader__box"></div>
           </div>
-        </div> */}
+        </div>
         {/* <!-- Loader End --> */}
         <Header/>
         {/* <!-- Gradient Background Start --> */}

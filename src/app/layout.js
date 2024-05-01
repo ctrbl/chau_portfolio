@@ -1,4 +1,4 @@
-import "../../public/App.css";
+import "../../public/css/App.css";
 
 export const metadata = {
     metadataBase: new URL("https://www.minhchau.me"),
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                 <link rel="manifest" href="img/favicon/manifest.webmanifest" />
 
                 {/* <!-- Template Styles Start --> */}
-                <link rel="stylesheet" href="/App.css" />
+                <link rel="stylesheet" href="css/App.css" />
                 <link rel="stylesheet" href="css/loaders/loader.css" />
                 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 
@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
                 {/* <!-- Load Scripts Start --> */}
                 <script src="/js/libs.min.js"></script>
                 <script src="/js/gallery-init.js"></script>
+                <script src="/js/app.js"></script>
             </head>
             <body>
                 <div id="root">{children}</div>
