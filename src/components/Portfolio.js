@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import StarIcon from './StarIcon';
 import { galleryItems } from '../lib/data';
 
-function Portfolio({openGallery}) {
+function Portfolio() {
     const [width, setWidth] = useState(window.innerWidth); 
 
     useEffect(() => {
@@ -40,7 +40,7 @@ function Portfolio({openGallery}) {
                         {/* Map through galleryItems array and render gallery items */}
                         {galleryItems.map((item, index) => (
                             <figure key={index} className="col-12 col-md-6 gallery__item grid-item animate-card-2" itemScope itemType="http://schema.org/ImageObject">
-                                <a href={item.imageUrl} data-image={item.thumbnailUrl} className="gallery__link" itemProp="contentUrl" data-size="1920x1080" onClick={(e) => { e.preventDefault(); openGallery(item.link); }}>
+                                <a href={item.imageUrl} data-image={item.thumbnailUrl} className="gallery__link" itemProp="contentUrl" data-size="1920x1080">
                                     <img src={item.thumbnailUrl} className="gallery__image" itemProp="thumbnail" alt={item.title} />
                                 </a>
                                 <figcaption className="gallery__descr" itemProp="caption description">

@@ -1,4 +1,5 @@
 import { contact } from '../lib/data';
+import HeadShot from '../../public/img/avatars/chau-headshot.jpg'
 
 function Avatar() {
     return (
@@ -9,8 +10,6 @@ function Avatar() {
             <div className="avatar__block">
                 <div className="avatar__logo d-flex align-items-center">
                 <div className="logo__image">
-                    {/* <!-- Your Logo Here!!! --> */}
-                    {/* <img src="img/logo.svg" alt="Braxton - Personal Portfolio & Resume HTML Template Logo" /> */}
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="85px" height="85px" viewBox="0 0 85 85" 
                     style={{ enableBackground: "new 0 0 85 85" }} xmlSpace="preserve" className="gradient-fill">
@@ -35,7 +34,7 @@ function Avatar() {
                 </div>
                 </div>
                 <div className="avatar__image">
-                <img src="/img/avatars/chau-headshot.jpg" alt="Chau Headshot" />
+                <img src={HeadShot.src} alt="Chau Headshot" />
                 </div>
             </div>
             {/* <!-- data caption #1 --> */}

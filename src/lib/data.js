@@ -278,21 +278,6 @@ export const galleryItems = [
         description: "A beautiful animated short film about a picnic day of Mr. and Mrs. Wood, crafted from scratch using Unity, Blender, and Adobe Photoshop.\nAwarded 2nd place in the Automata Final Project. 🥈",
         visible: 3
     },
-    // {
-    //     imageUrl: "/img/projects/walle.gif",
-    //     thumbnailUrl: "/img/projects/walle.gif",
-    //     title: "Wall-E Object Following Robot",
-    //     tags: [
-    //         "Arduino Uno", "Robotics",
-    //         "C/C++",
-    //         "TinkerCAD", 
-    //         "3D Printing",
-    //         "Object Detection",
-    //         "Light Sensitive", 
-    //     ],
-    //     description: "An object following robot created using TinkerCAD and 3D printing, tailored for K-8 students.\nProgrammed with C/C++, the robot autonomously detects, follows, and avoids collisions with objects.\nIt has a light-sensitive feature, adjusting LED intensity for safe navigation in low-light conditions.",
-    //     visible: 2
-    // },
 ];
 
 export const resume = [

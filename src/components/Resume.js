@@ -102,60 +102,56 @@ function Resume() {
             </div>
             {/* <!-- Content Block - H2 Block End --> */}
 
-            {/* <!-- Content Block - Testimonials Slider Start --> */}
+            {/* <!-- Content Block - Awards Slider Start --> */}
             <div className="content__block">
-
-            {/* <!-- Testimonials Slider Start --> */}
-            <div className="testimonials-slider">
-                {/* <!-- slider main container --> */}
-                <div className="swiper-testimonials">
-                {/* <!-- additional required wrapper --> */}
-                <div className="swiper-wrapper">
-                    {/* <!-- slides --> */}
-                    {awards.map((item, _) => (
-                        <div className="swiper-slide">
-                        <div className="testimonials-card animate-in-up">
-                            <div className="testimonials-card__tauthor d-flex animate-in-up">
-                            <div className="tauthor__avatar">
-                                <img src={item.image} alt={item.from} />
+                <div className="testimonials-slider">
+                    {/* <!-- slider main container --> */}
+                    <div className="swiper-testimonials">
+                    {/* <!-- additional required wrapper --> */}
+                    <div className="swiper-wrapper">
+                        {/* <!-- slides --> */}
+                        {awards.map((item, _) => (
+                            <div className="swiper-slide">
+                            <div className="testimonials-card animate-in-up">
+                                <div className="testimonials-card__tauthor d-flex animate-in-up">
+                                <div className="tauthor__avatar">
+                                    <img src={item.image} alt={item.from} />
+                                </div>
+                                <div className="tauthor__info d-flex flex-column justify-content-center">
+                                    <p className="tauthor__name">{item.name}</p>
+                                    <p className="tauthor__position"> 
+                                    <a href="#0" className="text-link-bold" target="_blank">{item.from}</a>
+                                    </p>
+                                </div>
+                                </div>
+                                <div className="testimonials-card__descr animate-in-up">
+                                <p>{item.description}</p>
+                                </div>
+                                <div className="testimonials-card__btnholder animate-in-up">
+                                <a className="btn mobile-vertical btn-line btn-transparent slide-right" href={item.link} target="_blank" rel="noreferrer">
+                                    <span className="btn-caption">Link</span>
+                                    <i className="ph-bold ph-arrow-right"></i>
+                                </a>
+                                </div>
                             </div>
-                            <div className="tauthor__info d-flex flex-column justify-content-center">
-                                <p className="tauthor__name">{item.name}</p>
-                                <p className="tauthor__position"> 
-                                <a href="#0" className="text-link-bold" target="_blank">{item.from}</a>
-                                </p>
                             </div>
-                            </div>
-                            <div className="testimonials-card__descr animate-in-up">
-                            <p>{item.description}</p>
-                            </div>
-                            <div className="testimonials-card__btnholder animate-in-up">
-                            <a className="btn mobile-vertical btn-line btn-transparent slide-right" href={item.link} target="_blank" rel="noreferrer">
-                                <span className="btn-caption">Link</span>
-                                <i className="ph-bold ph-arrow-right"></i>
-                            </a>
-                            </div>
-                        </div>
-                        </div>
-                    ))}
-                </div>
-                {/* <!-- navigation buttons --> */}
-                <div className="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
-                    <a className="btn btn-square btn-square-s btn-outline slide-left" href="#0">
-                    <i className="ph-bold ph-caret-left"></i>
-                    </a>
-                </div>
-                <div className="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
-                    <a className="btn btn-square btn-square-s btn-outline slide-right" href="#0">
-                    <i className="ph-bold ph-caret-right"></i>
-                    </a>
-                </div>
+                        ))}
+                    </div>
+                    {/* <!-- navigation buttons --> */}
+                    <div className="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
+                        <a className="btn btn-square btn-square-s btn-outline slide-left" href="#0">
+                        <i className="ph-bold ph-caret-left"></i>
+                        </a>
+                    </div>
+                    <div className="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
+                        <a className="btn btn-square btn-square-s btn-outline slide-right" href="#0">
+                        <i className="ph-bold ph-caret-right"></i>
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </div>
-            {/* <!-- Testimonials Slider End --> */}
-
-            </div>
-            {/* <!-- Content Block - Testimonials Slider End --> */}
+            {/* <!-- Content Block - Awards Slider End --> */}
 
         {/* <!-- Resume Section End --> */}
         </section>
