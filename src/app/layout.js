@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
                 <link rel="manifest" href="img/favicon/manifest.webmanifest" />
 
                 {/* <!-- Template Styles Start --> */}
-                <link rel="stylesheet" href="/css/loaders/loader.css" />
-                <link rel="stylesheet" type="text/css" href="/css/plugins.css" />
+                <link rel="stylesheet" href="css/loaders/loader.css" />
+                <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 
                 {/* <!-- Custom Browser Color Start --> */}
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7" />
@@ -39,11 +39,10 @@ export default function RootLayout({ children }) {
                 <meta name="msapplication-navbutton-color" content="#111111" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+                
                 {/* <!-- Load Scripts Start --> */}
                 <script src="/js/libs.min.js"></script>
                 <script src="/js/gallery-init.js"></script>
-            
             </head>
             <body>
                 <div id="root">{children}</div>
