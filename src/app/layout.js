@@ -1,4 +1,4 @@
-import "/public/css/App.css";
+import "../../public/App.css";
 
 export const metadata = {
     metadataBase: new URL("https://www.minhchau.me"),
@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
                 <link rel="manifest" href="img/favicon/manifest.webmanifest" />
 
                 {/* <!-- Template Styles Start --> */}
+                <link rel="stylesheet" href="/App.css" />
                 <link rel="stylesheet" href="css/loaders/loader.css" />
                 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 
