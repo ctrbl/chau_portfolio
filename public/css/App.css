@@ -3730,13 +3730,13 @@ form textarea:required:valid {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 570px;
+  height: 620px;
 }
-@media only screen and (min-width: 1400px) {
+/* @media only screen and (min-width: 1400px) {
   .cards__item {
     height: 620px;
   }
-}
+} */
 
 .cards__card {
   height: 100%;
