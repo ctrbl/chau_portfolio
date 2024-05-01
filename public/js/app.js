@@ -59,7 +59,7 @@ $(function() {
   // --------------------------------------------- //
   // Loader & Loading Animation Start
   // --------------------------------------------- //
-  const content = document.querySelector('body');
+  const content = document.getElementById('avatar');
   const imgLoad = imagesLoaded(content);
 
   imgLoad.on('done', instance => {
