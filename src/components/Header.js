@@ -1,5 +1,4 @@
 import { sections } from '../lib/data';
-import { ThemeSwitcherButton } from '../hooks/ColorSwitch';
 
 function Header() {
     return (
@@ -24,8 +23,8 @@ function Header() {
 
             {/* <!-- Header Controls Start --> */}
             <div className="header__controls d-flex justify-content-end">
-            {/* <button id="color-switcher" className="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button> */}
-            <ThemeSwitcherButton />
+            <button id="color-switcher" className="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+            {/* <ThemeSwitcherButton /> */}
             <a id="notify-trigger" className="header__trigger btn" href="mailto:minhchau.ng1028@gmail.com">
                 <span className="trigger__caption">Let's Talk</span>
                 <i className="ph-bold ph-chat-dots"></i>

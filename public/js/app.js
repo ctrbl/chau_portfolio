@@ -2,12 +2,12 @@ $(function() {
 
   "use strict";
 
-      const randomX = random(-400, 400);
-      const randomY = random(-200, 200);
-      const randomDelay = random(0, 50);
-      const randomTime = random(20, 40);
-      const randomTime2 = random(5, 12);
-      const randomAngle = random(-30, 150);
+  const randomX = random(-400, 400);
+  const randomY = random(-200, 200);
+  const randomDelay = random(0, 50);
+  const randomTime = random(20, 40);
+  const randomTime2 = random(5, 12);
+  const randomAngle = random(-30, 150);
 
   const blurs = gsap.utils.toArray(".blur");
   blurs.forEach((blur) => {
@@ -64,10 +64,10 @@ $(function() {
 
   imgLoad.on('done', instance => {
 
-    document.getElementById("loaderContent").classList.add("fade-out");
-    setTimeout(() => {
-      document.getElementById("loader").classList.add("loaded");
-    }, 300);
+    // document.getElementById("loaderContent").classList.add("fade-out");
+    // setTimeout(() => {
+    //   document.getElementById("loader").classList.add("loaded");
+    // }, 300);
 
     gsap.set(".animate-headline", {y: 50, opacity: 0});
     ScrollTrigger.batch(".animate-headline", {
@@ -87,9 +87,6 @@ $(function() {
     });
 
   });
-  // --------------------------------------------- //
-  // Loader & Loading Animation End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Bootstrap Scroll Spy Plugin Settings Start
@@ -112,9 +109,6 @@ $(function() {
     requestAnimationFrame(raf)
   }
   requestAnimationFrame(raf)
-  // --------------------------------------------- //
-  // Lenis Scroll Plugin End
-  // --------------------------------------------- //
 
   // ------------------------------------------------------------------------------ //
   // Parallax (apply parallax effect to any element with a data-speed attribute) Start
@@ -129,9 +123,6 @@ $(function() {
       scrub: 0
     }
   });
-  // --------------------------------------------- //
-  // Parallax End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Scroll Animations Start
@@ -228,9 +219,6 @@ $(function() {
   ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-2", {y: 0, opacity: 1}));
   ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-3", {y: 0, opacity: 1}));
   ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-5", {y: 0, opacity: 1}));
-  // --------------------------------------------- //
-  // Scroll Animations End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Smooth Scrolling Start
@@ -256,9 +244,6 @@ $(function() {
       }
     }
   });
-  // --------------------------------------------- //
-  // Smooth Scrolling End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Swiper Slider Start
@@ -339,9 +324,6 @@ $(function() {
 		});
 		return false;
 	});
-  // --------------------------------------------- //
-  // Contact Form End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Modernizr SVG Fallback Start
@@ -351,9 +333,6 @@ $(function() {
       return $(this).attr("src").replace(".svg", ".png");
     });
   };
-  // --------------------------------------------- //
-  // Modernizr SVG Fallback End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Chrome Smooth Scroll Start
@@ -365,17 +344,11 @@ $(function() {
     }
   } catch(err) {
   };
-  // --------------------------------------------- //
-  // Chrome Smooth Scroll End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Images Moving Ban Start
   // --------------------------------------------- //
   $("img, a").on("dragstart", function(event) { event.preventDefault(); });
-  // --------------------------------------------- //
-  // Images Moving Ban End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // Detecting Mobile/Desktop Start
@@ -391,9 +364,6 @@ $(function() {
   }
   //IE, Edge
   var isIE = /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /Edge\/\d+/.test(navigator.userAgent);
-  // --------------------------------------------- //
-  // Detecting Mobile/Desktop End
-  // --------------------------------------------- //
 
   // --------------------------------------------- //
   // PhotoSwipe Gallery Images Replace Start
@@ -403,13 +373,7 @@ $(function() {
     .append('<div class="picture"></div>')
     .children('.picture').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
   });
-  // --------------------------------------------- //
-  // PhotoSwipe Gallery Images Replace End
-  // --------------------------------------------- //
 
-  // --------------------------------------------- //
-  // Color Switch Start
-  // --------------------------------------------- //
   const themeBtn = document.querySelector('.color-switcher');
 
   function getCurrentTheme(){
@@ -448,9 +412,6 @@ $(function() {
         loadTheme(getCurrentTheme());
       });
   }
-  // --------------------------------------------- //
-  // Color Switch End
-  // --------------------------------------------- //
 });
 
 
