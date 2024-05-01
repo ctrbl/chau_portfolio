@@ -59,34 +59,34 @@ $(function() {
   // --------------------------------------------- //
   // Loader & Loading Animation Start
   // --------------------------------------------- //
-  // const content = document.getElementById('avatar');
-  // const imgLoad = imagesLoaded(content);
+  const content = document.getElementById('avatar');
+  const imgLoad = imagesLoaded(content);
 
-  // imgLoad.on('done', instance => {
+  imgLoad.on('done', instance => {
 
-  //   document.getElementById("loaderContent").classList.add("fade-out");
-  //   setTimeout(() => {
-  //     document.getElementById("loader").classList.add("loaded");
-  //   }, 300);
+    document.getElementById("loaderContent").classList.add("fade-out");
+    setTimeout(() => {
+      document.getElementById("loader").classList.add("loaded");
+    }, 300);
 
-  //   gsap.set(".animate-headline", {y: 50, opacity: 0});
-  //   ScrollTrigger.batch(".animate-headline", {
-  //     interval: 0.1,
-  //     batchMax: 4,
-  //     duration: 6,
-  //     onEnter: batch => gsap.to(batch, {
-  //       opacity: 1, 
-  //       y: 0,
-  //       ease: 'sine',
-  //       stagger: {each: 0.15, grid: [1, 4]}, 
-  //       overwrite: true
-  //     }),
-  //     onLeave: batch => gsap.set(batch, {opacity: 1, y: 0, overwrite: true}),
-  //     onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
-  //     onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 50, overwrite: true})
-  //   });
+    gsap.set(".animate-headline", {y: 50, opacity: 0});
+    ScrollTrigger.batch(".animate-headline", {
+      interval: 0.1,
+      batchMax: 4,
+      duration: 6,
+      onEnter: batch => gsap.to(batch, {
+        opacity: 1, 
+        y: 0,
+        ease: 'sine',
+        stagger: {each: 0.15, grid: [1, 4]}, 
+        overwrite: true
+      }),
+      onLeave: batch => gsap.set(batch, {opacity: 1, y: 0, overwrite: true}),
+      onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true}),
+      onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 50, overwrite: true})
+    });
 
-  // });
+  });
 
   // --------------------------------------------- //
   // Bootstrap Scroll Spy Plugin Settings Start
