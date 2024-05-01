@@ -1,4 +1,4 @@
-import './App.css'; 
+import '/public/css/App.css'; 
 import { ClientOnly } from './client';
 
 export function generateStaticParams() {

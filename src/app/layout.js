@@ -1,4 +1,4 @@
-import "./App.css";
+import "/public/css/App.css";
 
 export const metadata = {
     metadataBase: new URL("https://www.minhchau.me"),
