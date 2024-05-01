@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                 <link rel="manifest" href="img/favicon/manifest.webmanifest" />
 
                 {/* <!-- Template Styles Start --> */}
-                <link rel="stylesheet" href="css/App.css" />
+                {/* <link rel="stylesheet" href="css/App.css" /> */}
                 <link rel="stylesheet" href="css/loaders/loader.css" />
                 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
 
