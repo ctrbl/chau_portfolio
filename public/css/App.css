@@ -3812,7 +3812,7 @@ form textarea:required:valid {
   padding: 4.8rem 0 4.3rem 0;
   border-bottom: 1px solid var(--stroke-elements);
 }
-.resume-lines__item:first-of-type {
+.resume-lines__top {
   border-top: 1px solid var(--stroke-elements);
 }
 @media only screen and (min-width: 768px) {
@@ -3874,21 +3874,6 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .resume-lines__descr {
     margin-top: 0;
-  }
-}
-
-.resume-lines__tags {
-  margin-top: 0.7rem;
-}
-
-@media only screen and (min-width: 1400px) {
-  .resume-lines__tags {
-    margin-top: 0.8rem;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .resume-lines__tags {
-    margin-top: 0.9rem;
   }
 }
 

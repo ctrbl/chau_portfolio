@@ -29,11 +29,11 @@ function Resume() {
                 </div>
                 {/* <!-- H3 Block End --> */}
 
-                {resume_section.items.map((item, _) => (
+                {resume_section.items.map((item, index) => (
                     <div className="container-fluid p-0 resume-lines">
                     {/* <!-- Education Lines Start --> */}
                         {/* <!-- education single item --> */}
-                        <div className="row g-0 resume-lines__item animate-in-up">
+                        <div className={`row g-0 resume-lines__item ${index === 0 ? "resume-lines__top" : ""} animate-in-up`}>
                             <div className="col-12 col-md-2">
                                 <span className="resume-lines__date animate-in-up">{item.date}</span>
                             </div>
@@ -46,18 +46,18 @@ function Resume() {
                             <div className="col-12 col-md-5">
                                 <p className="small resume-lines__descr animate-in-up">{item.description}</p>
                             </div>
-                            <div className="col-12 col-md-2"></div>
+                            {/* <div className="col-12 col-md-2"></div>
                             <div className="col-12 col-md-10">
                                 {item.tags && item.tags.length > 0 && (
                                     <div className="row g-0" style={{marginTop: "1rem"}}>
-                                        <div className="resume-lines__tags d-flex flex-wrap animate-in-up">
+                                        <div className="card__tags d-flex flex-wrap animate-in-up">
                                             {item.tags.map((tag, _) => (
                                                 <span key={tag} className="rounded-tag tag-outline">{tag}</span>
                                             ))}
                                         </div>
                                     </div>
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                     {/* <!-- Education Lines End --> */}
                     </div>
