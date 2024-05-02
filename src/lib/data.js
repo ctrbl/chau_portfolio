@@ -415,7 +415,7 @@ export const awards = [
         from_link: "https://www.usf.edu/",
         image: "/img/icons/logo-usf.png",
         description: "Upon the recommendation of the faculty of the Department of Computer Science & Engineering at the University of South Florida, this award is for the Valedictorian of the graduating class of Computer Science in Fall 2023.",
-        link: "/img/usf_valedictorian.jpg"
+        link: "https://chau-portfolio.s3.us-east-2.amazonaws.com/usf_valedictorian.jpg"
     },
     {
         name: "King O'Neal Award",
