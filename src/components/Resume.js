@@ -46,7 +46,7 @@ function Resume() {
                             <div className="col-12 col-md-5">
                                 <p className="small resume-lines__descr animate-in-up">{item.description}</p>
                             </div>
-                            {/* <div className="col-12 col-md-2"></div>
+                            <div className="col-12 col-md-2"></div>
                             <div className="col-12 col-md-10">
                                 {item.tags && item.tags.length > 0 && (
                                     <div className="row g-0" style={{marginTop: "1rem"}}>
@@ -57,7 +57,7 @@ function Resume() {
                                         </div>
                                     </div>
                                 )}
-                            </div> */}
+                            </div>
                         </div>
                     {/* <!-- Education Lines End --> */}
                     </div>
