@@ -8,6 +8,8 @@ import Resume from '../components/Resume';
 import Contact from '../components/Contact';
 import PhotoSwipe from '../components/PhotoSwipe';
 
+import { galleryItems } from '../lib/data';
+
 function App() {
   return (
     <body>
@@ -34,7 +36,7 @@ function App() {
         <div id="content" className="content">
           <div className="content__wrapper">
             <Home/>
-            <Portfolio/>
+            <Portfolio projects={galleryItems} />
             <About/>
             <Resume/>
             <Contact/>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import StarIcon from './StarIcon';
-import { galleryItems } from '../lib/data';
 
-function Portfolio() {
+function Portfolio( {projects} ) {
     const [width, setWidth] = useState(window.innerWidth); 
 
     useEffect(() => {
@@ -38,7 +38,7 @@ function Portfolio() {
                 <div className="container-fluid px-0 inner__gallery">
                     <div className="row gx-0 my-gallery" itemScope itemType="http://schema.org/ImageGallery">
                         {/* Map through galleryItems array and render gallery items */}
-                        {galleryItems.map((item, index) => (
+                        {projects.map((item, index) => (
                             <figure key={index} className="col-12 col-md-6 gallery__item grid-item animate-card-2" itemScope itemType="http://schema.org/ImageObject">
                                 <a href={item.imageUrl} data-image={item.thumbnailUrl} className="gallery__link" itemProp="contentUrl" data-size="1920x1080">
                                     <img src={item.thumbnailUrl} className="gallery__image" itemProp="thumbnail" alt={item.title} />
@@ -67,5 +67,15 @@ function Portfolio() {
         </section>
     );
 }
+
+Portfolio.propTypes = {
+    projects: PropTypes.arrayOf(PropTypes.shape({
+        imageUrl: PropTypes.string.isRequired,
+        thumbnailUrl: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        tags: PropTypes.arrayOf(PropTypes.string).isRequired
+    })).isRequired
+};
 
 export default Portfolio;
