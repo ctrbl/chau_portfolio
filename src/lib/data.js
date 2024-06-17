@@ -285,8 +285,8 @@ export const resume = [
         title: "My Education",
         items: [
             {
-                name: "University of South Florida",
-                link: "https://www.usf.edu/",
+                name: "Georgia Institute of Technology",
+                link: "https://www.gatech.edu/",
                 role: "M.S. in Computer Science",
                 date: "2024 - present",
                 description: "Specialization: Machine Learning",

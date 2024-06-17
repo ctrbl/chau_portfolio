@@ -42,9 +42,8 @@ function About() {
                 {/* <!-- About Me Description Start --> */}
                 <div className="col-12 col-xl-8 grid-item about-descr">
                     <p className="about-descr__text animate-in-up">
-                    Graduated with a <a href="#0" className="text-link">B.S. in Computer Science</a> in December 2023, I'm currently pursuing a <a href="#0" className="text-link">M.S. in Computer Science </a>
-                    specializing in Machine Learning at USF. I will soon be transferring to the <a href="https://omscs.gatech.edu/" className="text-link" target="_blank" rel="noopener noreferrer">OMSCS program at Georgia Tech</a> in Fall 2024. 
-                    With this flexibility, I'm currently looking for a full-time entry-level SWE position.
+                    Graduated with a <a href="#0" className="text-link">B.S. in Computer Science</a> at the University of South Florida in December 2023, I'm currently pursuing a <a href="https://omscs.gatech.edu/" className="text-link" target="_blank" rel="noopener noreferrer">M.S. in Computer Science </a>
+                    specializing in Machine Learning at Georgia Institute of Technology. 
                     </p>
                     <p className="about-descr__text animate-in-up">
                     Throughout my academic journey, undergraduate research assistance, internship, and hackathons participation, I have gained robust expertise in <a href="#0" className="text-link">full-stack software development </a> 
