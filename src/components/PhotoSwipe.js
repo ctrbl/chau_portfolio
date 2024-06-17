@@ -1,4 +1,25 @@
+import React, { useState, useEffect } from 'react'; 
+
 function PhotoSwipe() {
+    const [currentLink, setCurrentLink] = useState('');
+
+    const linkHandle = () => {
+        if (currentLink) {
+            window.open(currentLink, '_blank');
+        }
+    };
+
+    useEffect(() => {
+        // Event listener to update currentLink
+        const updateLink = (link) => setCurrentLink(link);
+
+        document.addEventListener('updateLink', (event) => updateLink(event.detail));
+
+        return () => {
+            document.removeEventListener('updateLink', updateLink);
+        };
+    }, []);
+
     return (
         <div className="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         {/* <!-- Root element of PhotoSwipe. Must have className pswp. --> */}
@@ -29,7 +50,7 @@ function PhotoSwipe() {
 
                     <button className="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
 
-                    {/* <button className="pswp__button pswp__button--link" title="Link" onClick={linkHandle}></button> */}
+                    <button className="pswp__button pswp__button--link" title="Link" onClick={linkHandle}></button>
 
                     <button className="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
 

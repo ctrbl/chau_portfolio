@@ -7,8 +7,8 @@ export const metadata = {
     keywords: [
         "Software Engineer",
         "Full Stack Developer",
-        "Software Developer",
         "Mobile Developer",
+        "Machine Learning"
       ],
       creator: "Chau Nguyen",
 }

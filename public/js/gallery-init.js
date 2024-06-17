@@ -35,7 +35,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             item = {
                 src: linkEl.getAttribute('href'),
                 w: parseInt(size[0], 10),
-                h: parseInt(size[1], 10)
+                h: parseInt(size[1], 10),
+                link: linkEl.getAttribute('urlLink')
             };
 
             if (figureEl.children.length > 1) {
@@ -211,6 +212,15 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         gallery.listen('close', function() {
             document.body.classList.remove('noscroll');
+        });
+
+        // Listen for slide changes to update the link
+        gallery.listen('afterChange', function() {
+            var currentItem = gallery.currentItem;
+            if (currentItem && currentItem.link) {
+                var event = new CustomEvent('updateLink', { detail: currentItem.link });
+                document.dispatchEvent(event);
+            }
         });
     };
 
