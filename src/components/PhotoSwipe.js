@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 
 function PhotoSwipe() {
     const [currentLink, setCurrentLink] = useState('');
@@ -10,16 +10,18 @@ function PhotoSwipe() {
     };
 
     useEffect(() => {
-        // Event listener to update currentLink
-        const updateLink = (link) => setCurrentLink(link);
+        const updateLink = (event) => {
+            console.log("Link updated:", event.detail);
+            setCurrentLink(event.detail);
+        };
 
-        document.addEventListener('updateLink', (event) => updateLink(event.detail));
+        document.addEventListener('updateLink', updateLink);
 
         return () => {
             document.removeEventListener('updateLink', updateLink);
         };
     }, []);
-
+    
     return (
         <div className="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         {/* <!-- Root element of PhotoSwipe. Must have className pswp. --> */}

@@ -149,6 +149,15 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             options,
             items;
 
+        var updateLink = function() {
+            var currItem = gallery.currItem;
+            if (currItem && currItem.link) {
+                console.log("Current link: ", currItem.link);
+                var event = new CustomEvent('updateLink', { detail: currItem.link });
+                document.dispatchEvent(event);
+            }
+        };
+
         items = parseThumbnailElements(galleryElement);
 
         // define options (if needed)
@@ -202,6 +211,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         // Pass data to PhotoSwipe and initialize it
         gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
+        updateLink(); 
 
         // Modifications to manage the gallery overlay
         document.body.classList.add('noscroll');
@@ -210,17 +220,13 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         // Focus management for accessibility
         pswpElement.focus();
 
-        gallery.listen('close', function() {
-            document.body.classList.remove('noscroll');
-        });
-
         // Listen for slide changes to update the link
         gallery.listen('afterChange', function() {
-            var currentItem = gallery.currentItem;
-            if (currentItem && currentItem.link) {
-                var event = new CustomEvent('updateLink', { detail: currentItem.link });
-                document.dispatchEvent(event);
-            }
+            updateLink(); 
+        });
+
+        gallery.listen('close', function() {
+            document.body.classList.remove('noscroll');
         });
     };
 
