@@ -152,7 +152,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         var updateLink = function() {
             var currItem = gallery.currItem;
             if (currItem && currItem.link) {
-                console.log("Current link: ", currItem.link);
                 var event = new CustomEvent('updateLink', { detail: currItem.link });
                 document.dispatchEvent(event);
             }

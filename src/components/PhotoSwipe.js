@@ -10,10 +10,7 @@ function PhotoSwipe() {
     };
 
     useEffect(() => {
-        const updateLink = (event) => {
-            console.log("Link updated:", event.detail);
-            setCurrentLink(event.detail);
-        };
+        const updateLink = (event) => setCurrentLink(event.detail);
 
         document.addEventListener('updateLink', updateLink);
 
@@ -21,7 +18,7 @@ function PhotoSwipe() {
             document.removeEventListener('updateLink', updateLink);
         };
     }, []);
-    
+
     return (
         <div className="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         {/* <!-- Root element of PhotoSwipe. Must have className pswp. --> */}
