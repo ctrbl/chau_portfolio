@@ -84,7 +84,6 @@ export const skills = [
             "Python",
             "C/C++",
             "Objective-C",
-            "Java",
             "JavaScript",
             "SQL",
             "HTML/CSS",
@@ -291,10 +290,12 @@ export const resume = [
                 date: "2024 - present",
                 description: "Specialization: Machine Learning",
                 tags: [
+                    "Artificial Intelligence",
                     "Computer Vision", 
                     "Computer Methods for Imaging", 
-                    "Algorithms",
-                    "Operating Systems",
+                    "Graduate Algorithms",
+                    "Machine Learning (In Process)",
+                    "Deep Learning (In Process)"
                 ]
             },
             {
@@ -311,6 +312,7 @@ export const resume = [
                     "Software Engineering",
                     "Algorithms", 
                     "Data Structures", 
+                    "Operating Systems",
                     "Graph Theory", 
                     "Automata Theory", 
                     "Cryptography",
@@ -328,6 +330,13 @@ export const resume = [
     {
         title: "Work Experience",
         items: [
+            {
+                name: "Blue Purpose", 
+                link: "www.thebluepurpose.com",
+                role: "Software Developer Intern",
+                date: "09/2024 - Present",
+                description: "Developed digitalized health care forms with autofill functionalities, automatic triggers, and data visualization using C#, ASP.NET, Blazor, and SQL.",
+            },
             {
                 name: "Taperk", 
                 link: "https://www.taperk.com/",
@@ -383,8 +392,8 @@ export const tools = [
         link: "img/icons/icon-swiftui.svg",
     },
     {
-        name: "MySQL",
-        link: "img/icons/icon-mysql.svg",
+        name: "PostgreSQL",
+        link: "img/icons/icon-postgresql.png",
     },
     {
         name: "Node.js",
