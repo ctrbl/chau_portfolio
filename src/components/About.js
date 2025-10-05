@@ -42,22 +42,19 @@ function About() {
                 {/* <!-- About Me Description Start --> */}
                 <div className="col-12 col-xl-8 grid-item about-descr">
                     <p className="about-descr__text animate-in-up">
-                    Graduated with a <a href="#0" className="text-link">B.S. in Computer Science</a> at the University of South Florida in December 2023, I'm currently pursuing a <a href="https://omscs.gatech.edu/" className="text-link" target="_blank" rel="noopener noreferrer">M.S. in Computer Science </a>
-                    specializing in Machine Learning at Georgia Institute of Technology. 
+                    Graduated with a B.S. in Computer Science at the University of South Florida in December 2023, I'm currently pursuing a <a href="https://omscs.gatech.edu/" className="text-link" target="_blank" rel="noopener noreferrer">M.S. in Computer Science </a>
+                    specializing in Machine Learning at Georgia Institute of Technology.
                     </p>
                     <p className="about-descr__text animate-in-up">
-                    Throughout my academic journey, undergraduate research assistance, internship, and hackathons participation, I have gained robust expertise in <a href="#0" className="text-link">full-stack software development </a> 
-                    utilizing modern technologies like MERN stack, Angular, Next.js, TypeScript, MySQL, AWS, Swift, and more. 
-                    </p>
-                    <p className="about-descr__text animate-in-up">
-                    Driven by a passion for <a href="#0" className="text-link">AI/ML</a>, I aspire to become a software engineer that develops innovative solutions that seamlessly integrate 
-                    AI technologies into real-world applications, enhancing user experience and streamlining everyday life.
+                    I'm also a full time <a className="text-link">Research Engineer in Embedded Systems and AI</a> at <a href="https://www.gevernova.com" className="text-link">GE Vernova</a>.
+                    Driven by a passion for <a className="text-link">AI/ML</a>, I'm driven to develop innovative software solutions that seamlessly integrate 
+                    AI technologies into real-world applications, enhancing user experience and streamlining everyday workflows.
                     </p>
                     <div className="btn-group about-descr__btnholder animate-in-up">
-                    <div className="btn mobile-vertical btn-default btn-hover btn-hover-accent">
+                    {/* <div className="btn mobile-vertical btn-default btn-hover btn-hover-accent">
                         <span className="btn-caption" onClick={downloadResume}>Download CV</span>
                         <i className="ph-bold ph-download-simple"></i>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
                 {/* <!-- About Me Description End -->
@@ -72,12 +69,6 @@ function About() {
                     </div>
                     <div className="about-info__item animate-in-up">
                     <h6>
-                        <small className="top">Phone</small>
-                        <a className="text-link-bold" href="tel:+12127089400">+1 813-367-6834</a>
-                    </h6>
-                    </div>
-                    <div className="about-info__item animate-in-up">
-                    <h6>
                         <small className="top">Email</small>
                         <a className="text-link-bold" href="mailto:minhchau.ng1028@gmail.com">minhchau.ng1028@gmail.com</a>
                     </h6>
@@ -85,7 +76,7 @@ function About() {
                     <div className="about-info__item animate-in-up">
                     <h6>
                         <small className="top">LinkedIn</small>
-                        <a className="text-link-bold" href="https://linkedin.com/in/ctrbl/" target="_blank" rel="noreferrer">linkedin.com/in/ctrbl/</a>
+                        <a className="text-link-bold" href="https://linkedin.com/in/ctrbl/" target="_blank" rel="noreferrer">linkedin.com/in/ctrbl</a>
                     </h6>
                     </div>
                     <div className="about-info__item animate-in-up">

@@ -44,7 +44,10 @@ function Resume() {
                                 </p>
                             </div>
                             <div className="col-12 col-md-5">
-                                <p className="small resume-lines__descr animate-in-up">{item.description}</p>
+                                <p
+                                    className="small resume-lines__descr animate-in-up"
+                                    dangerouslySetInnerHTML={{ __html: item.description }}
+                                />
                             </div>
                             <div className="col-12 col-md-2"></div>
                             <div className="col-12 col-md-10">

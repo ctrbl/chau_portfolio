@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" dir="ltr">
             <head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
 
                 {/* <!-- Viewport Meta--> */}
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
                 {/* <!-- Template Favicon & Icons Start --> */}

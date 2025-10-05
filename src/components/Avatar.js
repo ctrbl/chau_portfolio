@@ -40,7 +40,13 @@ function Avatar() {
             <div className="avatar__block">
                 <h6>
                 <small className="top">Specialization:</small>
-                Full Stack Development<br />and Machine Learning
+                Full Stack Development
+                </h6>
+            </div>
+            <div className="avatar__block">
+                <h6>
+                <small className="top">Interest:</small>
+                AI & Machine Learning
                 </h6>
             </div>
             {/* <!-- data caption #2 --> */}

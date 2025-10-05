@@ -953,6 +953,9 @@ h6 small.bottom {
   }
 }
 
+b {
+  font-weight: 600 !important;
+}
 p {
   font: normal 400 2rem/1.4 var(--_font-default);
   font-variant-numeric: lining-nums;

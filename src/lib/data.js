@@ -28,12 +28,6 @@ export const sections = [
 
 export const contact = [
     {
-        name: "Phone",
-        value: "+1 813-367-6834",
-        link: "tel:+8133676834",
-        symbol: "ph-bold ph-phone-call"
-    },
-    {
         name: "Email",
         value: "minhchau.ng1028@gmail.com",
         link: "mailto:minhchau.ng1028@gmail.com",
@@ -82,12 +76,12 @@ export const skills = [
         description: "I am most proficient in",
         tags: [
             "Python",
-            "C/C++",
+            "C",
+            "C++",
             "Objective-C",
             "JavaScript",
             "SQL",
             "HTML/CSS",
-            "Swift",
         ],
         imgUrl: "/img/sections/code.png",
     }, 
@@ -95,24 +89,19 @@ export const skills = [
         name: "Software Development",
         description: "Frameworks and Tools",
         tags: [
-            "React", 
-            "React Native", 
-            "Angular", 
-            "MongoDB", 
+            "React",
+            "Swift",
             "PostgreSQL", 
-            "AWS",
+            "MongoDB", 
             "Node.js", 
-            "Express", 
             "RESTful APIs",
             "Git/GitHub",
-            "XCode",
-            "Pytest",
         ], 
         imgUrl: "/img/sections/sde.png",
     },
     {
         name: "Artificial Intelligence",
-        description: "Libraries and Tasks",
+        description: "Libraries",
         tags: [
             "Keras",
             "Tensorflow", 
@@ -123,9 +112,6 @@ export const skills = [
             "OpenCV",
             "Scikit-learn",
             "Seaborn",
-            "Fine Tuning",
-            "Classification", 
-            "NLP"
         ],
         imgUrl: "/img/sections/ai.png",
     },
@@ -135,7 +121,6 @@ export const skills = [
         tags: [
             "Agile Methodologies",
             "Jira", 
-            "Test-Driven Development",
             "Selenium",
             "Virtualization",
             "Linux", 
@@ -294,8 +279,10 @@ export const resume = [
                     "Computer Vision", 
                     "Computer Methods for Imaging", 
                     "Graduate Algorithms",
-                    "Machine Learning (In Process)",
-                    "Deep Learning (In Process)"
+                    "Machine Learning",
+                    "Deep Learning",
+                    "Reinforcement Learning (IP)",
+                    "Data Analytics & Visualization (IP)",
                 ]
             },
             {
@@ -331,18 +318,36 @@ export const resume = [
         title: "Work Experience",
         items: [
             {
+                name: "GE Vernova", 
+                link: "https://www.gevernova.com/",
+                role: "Research Engineer",
+                date: "09/2025 - Present",
+                description: "Embedded Systems & AI 👩🏻‍💻",
+            },
+            {
+                name: "GE Vernova", 
+                link: "https://www.gevernova.com/",
+                role: "Research Intern",
+                date: "05/2025 - 8/2025",
+                description: "&#9702;&nbsp; Data collection, pre-processing, and analysis\
+                             <br/>&#9702;&nbsp; Explored anomaly detection methods \
+                             <br/>&#9702;&nbsp; Parallel graph build (250k edges) & BFS backtracking for root-cause analysis \
+                             <br/>&#9702;&nbsp; Implemented a rule-based algorithm, achieving 27x coverage and 92% accuracy",
+            },
+            {
                 name: "Blue Purpose", 
-                link: "www.thebluepurpose.com",
+                link: "https://thebluepurpose.com/",
                 role: "Software Developer Intern",
-                date: "09/2024 - Present",
-                description: "Developed digitalized health care forms with autofill functionalities, automatic triggers, and data visualization using C#, ASP.NET, Blazor, and SQL.",
+                date: "09/2024 - 05/2025",
+                description: `&#9702;&nbsp; Developed digitalized health care forms with autofill functionalities using C# and ASP.NET.\
+                              <br/>&#9702;&nbsp; Implemented custom SQL queries to deliver facility-specific data visualization dashboards.`,
             },
             {
                 name: "Taperk", 
                 link: "https://www.taperk.com/",
                 role: "Software Developer Intern",
                 date: "09/2023 - 12/2023",
-                description: "Developed the UI/UX for an iOS loyalty app utilizing SwiftUI, Objective-C, Figma, RESTful APIs, Git, GitLab, XCTest, and TestFlight.",
+                description: "Developed the UI/UX for an iOS loyalty app utilizing SwiftUI, Objective-C, RESTful APIs, and TestFlight.",
             },
             {
                 name: "University of South Florida", 

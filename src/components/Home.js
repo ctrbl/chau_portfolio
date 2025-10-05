@@ -24,12 +24,13 @@ function Home() {
             <h1 className="headline__title animate-headline" style={{textAlign: "center"}}>I'm Chau Nguyen<br />✨ Aspiring ✨<br />Software Engineer</h1>
             <div className="headline__btnholder d-flex flex-column flex-sm-row">
                 <a className="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="#portfolio">
-                <span className="btn-caption">My Works</span>
-                <i className="ph-bold ph-squares-four"></i>
+                    <span className="btn-caption">My Works</span>
+                    <i className="ph-bold ph-squares-four"></i>
                 </a>
-                <a id="downloadButton" className="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#0">
-                <span className="btn-caption" onClick={downloadResume}>Download CV</span>
-                <i className="ph-bold ph-download-simple"></i>
+                <a id="downloadButton" className="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#resume">
+                    <span className="btn-caption">View Resume</span>
+                    {/* <i className="ph-bold ph-download-simple"></i> */}
+                    <i className="ph-bold ph-sparkle"></i>
                 </a>
             </div>
             </div>
